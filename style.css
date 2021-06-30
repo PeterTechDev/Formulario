@@ -110,6 +110,11 @@ input[type="text"], input[type="email"] {
     padding-top: 100px;
 }
 
+/* muda os elementos quando são selecionados */
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
 /* Estiliza o botão */
 button {
     font-size: 1.2em;
