@@ -1,0 +1,133 @@
+/* Reseta todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Salva variaveis (neste caso, cores) */
+html {
+    --orange: #FF5A09;
+    --light-orange: #ec7f37 ;
+    --cool-purple: #bf4aa8;
+    --cool-blue: #51d0de;
+    --cool-white:#d9d9d9;
+}
+
+main {
+    padding-top: 2em;
+    height: 100vh;
+    width: 45%;
+    margin: 0 auto;
+    border: solid 1px green;
+}
+
+/* centraliza um pouco o form dentro da main */
+form {
+    padding-left: 20px;
+}
+
+/* Altera elementos com o ID title */
+#title {
+    font-family: sans-serif;
+    /* chama a variavel salva na linha 12 */
+    color: var(--orange);
+    /* margin-left: 7%; */
+    text-align: center;
+
+}
+
+#subtitle {
+    font-family: sans-serif;
+    color: var(--orange);
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+/*Define o tamanho de todas as divs com a classe campo para terem 75% da tela */
+.campo {
+    width: 85%;
+}
+
+body {
+    background-color: #393939;
+    font-family: sans-serif;
+    color: var(--orange);
+    justify-content: center;
+    height: 100vh;
+}
+
+body, button, input, textarea {
+    font-size: clamp(14px, 1.2em, 2vw);
+    /* clamp é um intervalo de tamanho. O primeiro valor é o tamnho mínimo. O segundo é o padrão. O terceiro é o maior*/ 
+}
+
+/* Coloca uma borda mais arredondada e muda cor da fonte dentro desses inputs */
+input, select, textarea, button {
+   color: var(--orange);
+   border-radius: 5px;
+}
+
+/* Define a distância entre os elementos */
+.campo {
+    margin-bottom: 1em;
+    /* border: 1px solid red; */
+    padding-bottom: 0.1em;
+}
+
+/* Cria um espaço entre os elementos e o display block para ficarem ordenados */
+.campo label {
+    padding: 0.2em;
+    display: block;
+}
+
+/* O display flex row para nome e sobrenome ficarem lado a lado */
+#nome {
+    display: flex;
+}
+
+/* Cria uma seperação entre os inputs nome e sobrenome */
+#nome span {
+    padding-right: 10px;
+}
+
+/* Estiliza a barra de preencher os inputs */
+input[type="text"], input[type="email"] {
+    padding: 0.2em;
+    padding-top: 0.1em;
+    border: 1px solid var(--orange);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+/* cria um espaço para baixo */
+#checkbox {
+    padding-bottom: 1em;
+}
+
+#checkbox input {
+    padding-top: 100px;
+}
+
+/* Estiliza o botão */
+button {
+    font-size: 1.2em;
+    background-color: var(--orange);
+    color: #ffffff;
+    padding: 0.3em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+/* O elemento se altera quando o cursor passa por cima */
+button:hover {
+    background: var(--light-orange);
+    border: solid 3px var(--orange);
+    text-shadow: none;
+}
+
+/* O cursor do mouse viram uma "maõzinha quando passa por cima dos elementos selecionados */
+button, select {
+    cursor: pointer;
+}
