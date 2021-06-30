@@ -126,9 +126,14 @@ button {
 }
 
 /* O elemento se altera quando o cursor passa por cima */
-button:hover {
-    background: var(--light-orange);
-    border: solid 3px var(--orange);
+button[type="submit"]:hover {
+    background: green;
+    border: solid 3px green;
+    text-shadow: none;
+}
+button[type="reset"]:hover {
+    background: red;
+    border: solid 3px red;
     text-shadow: none;
 }
 
