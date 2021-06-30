@@ -18,10 +18,8 @@ html {
 
 main {
     padding-top: 2em;
-    height: 100vh;
     width: 45%;
     margin: 0 auto;
-    border: solid 1px green;
 }
 
 /* centraliza um pouco o form dentro da main */
@@ -140,4 +138,16 @@ button[type="reset"]:hover {
 /* O cursor do mouse viram uma "maõzinha quando passa por cima dos elementos selecionados */
 button, select {
     cursor: pointer;
+}
+
+footer {
+    background-color: rgb(97, 92, 92);
+}
+
+footer {
+    background-color: none;
+    text-align: center;
+    height: 100px;
+    padding: 6px;
+    margin-top: 20px;
 }

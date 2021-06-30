@@ -9,7 +9,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Título da página no navegador -->
-        <title>Cadastro</title>
+        <title>Checkpoint</title>
+
+        <!-- favicon -->
+
 
         <!-- Link do css -->
         <link rel="stylesheet" href="style.css">
@@ -19,8 +22,8 @@
         <!-- Cabeçalho (#title e #subtitle) -->
         <main>
             <div id="titulos">
-                <h1 id="title">Cadastro de Devs</h1>
-                <p id="subtitle">Complete suas informações</p>
+                <h1 id="title">Checkpoint dos alunos</h1>
+                <p id="subtitle">Contribua com seu feedback</p>
                 <br>
             </div>
 
@@ -47,7 +50,7 @@
 
                 <!-- Campo com radio button -->
                 <div class="campo">
-                    <label for="application"><strong>De qual lado da aplicação você desenvolve</strong></label>
+                    <label for="application"><strong>De qual lado da aplicação você tem mais interesse</strong></label>
 
                     <label for="frontend">
                         <input type="radio" name="devweb" id="frontend" checked> Frontend
@@ -64,41 +67,37 @@
 
                 <!-- Campo com o select option -->
                 <div class="campo">
-                    <label for="senioridade"><strong>Senioridade</strong></label>
+                    <label for="senioridade"><strong>Matéria Favorita</strong></label>
                     <select id="senioridade" required>
                         <option value="none" selected disabled value="" >Selecione</option>
-                        <option value="junior">Júnior</option>
-                        <option value="pleno">Pleno</option>
-                        <option value="Senior">Senior</option>
+                        <option value="Introdução à Informática">Introdução à Informática</option>
+                        <option value="Programção Imperativa">Programção Imperativa</option>
+                        <option value="Banco de dados I">Banco de dados I</option>
+                        <option value="Frontend I">Frontend I</option>
+                        <option value="Metodologias Ágeis">Metodologias Ágeis</option>
                     </select>
                 </div>
 
                 <fieldset class="grupo">
                     <!-- campo com checkbox -->
                     <div id="checkbox">
-                        <label for="tecnologias"><strong>Selecione as tecnologias que utiliza:</strong></label>
+                        <label for="tecnologias"><strong>O que mais me atrapalha meu desempenho no curso:</strong></label>
                         <br>
-                        <input type="checkbox" name="html" id="html"value="HTML">
-                        <label for="html">HTML</label>
-                        <input type="checkbox" name="CSS" id="CSS"value="CSS">
-                        <label for="CSS">CSS</label>
-                        <input type="checkbox" name="JavaScript" id="JavaScript"value="JavaScript">
-                        <label for="JavaScript">JavaScript</label>
-                        <input type="checkbox" name="PHP" id="PHP"value="PHP">
-                        <label for="PHP">PHP</label>
-                        <input type="checkbox" name="C#" id="C#"value="C#">
-                        <label for="C#">C#</label>
-                        <input type="checkbox" name="Python" id="Python"value="Python">
-                        <label for="Python">Python</label>
-                        <input type="checkbox" name="Java" id="Java"value="Java">
-                        <label for="Java">Java</label>
+                        <input type="checkbox" name="Falta de tempo" id="Falta de tempo"value="Falta de tempo">
+                        <label for="html">Falta de tempo</label>
+                        <input type="checkbox" name="html" id="Material disponível"value="Material disponível">
+                        <label for="Material disponível">Material disponível</label>
+                        <input type="checkbox" name="html" id="As aulas"value="As aulas">
+                        <label for="As aulas">As aulas</label>
+                        <input type="checkbox" name="Outros" id="Outros"value="Outros">
+                        <label for="Outros">Outros</label>
                     </div>
                 </fieldset>
 
                 <!-- campo com textarea -->
                 <div class="campo">
-                    <label for="experiencia"><strong>Conte um pouco da sua exeperiência</strong></label>
-                    <textarea name="experiencia" id="experiencia" cols="30" rows="6" style="width: 26em;"></textarea>
+                    <label for="experiencia"><strong>Conte um pouco da sua exeperiência até aqui</strong></label>
+                    <textarea name="experiencia" id="experiencia" cols="30" rows="6" style="width: 26em;" placeholder="Seu feedback é essencial para continuarmos nossa jornada da melhor forma possível"></textarea>
                 </div>
 
                 <!-- Botão para enviar -->
@@ -108,5 +107,28 @@
             </form>
         </main>
     </body>
+
+    <footer><p>Desenvolvido por</p>
+        <p>&copy; <em id="date"></em>Peter Leite Souza</p>
+        <a
+          href="https://www.linkedin.com/in/peter-leite-6b4754202/"
+          target="_blank"
+        >
+          <img
+            src="https://img.icons8.com/fluent/48/000000/linkedin-circled.png"
+            width="40px"
+            alt=""
+          />
+        </a>
+        <a
+          href="https://github.com/PeterTechDev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://img.icons8.com/ios-filled/50/000000/github.png"
+            width="38px"
+          />
+        </a></footer>
 
 </html>
