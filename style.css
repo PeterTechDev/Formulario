@@ -18,7 +18,8 @@ html {
 
 main {
     padding-top: 2em;
-    width: 45%;
+    /* Deixei o width fixo para poder centralizar o titulo. Ainda não consegui de outra forma sem ele mudar de posição sem que a tela mudasse de resolução */
+    width: 650px;
     margin: 0 auto;
 }
 
@@ -32,7 +33,6 @@ form {
     font-family: sans-serif;
     /* chama a variavel salva na linha 12 */
     color: var(--orange);
-    /* margin-left: 7%; */
     text-align: center;
 
 }
