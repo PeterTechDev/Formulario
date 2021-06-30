@@ -57,7 +57,7 @@ body {
     height: 100vh;
 }
 
-body, button, input, textarea {
+body, button, input, textarea, select {
     font-size: clamp(14px, 1.2em, 2vw);
     /* clamp é um intervalo de tamanho. O primeiro valor é o tamnho mínimo. O segundo é o padrão. O terceiro é o maior*/ 
 }
@@ -150,4 +150,5 @@ footer {
     height: 100px;
     padding: 6px;
     margin-top: 20px;
+ 
 }
