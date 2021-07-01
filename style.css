@@ -26,6 +26,7 @@ main {
 /* centraliza um pouco o form dentro da main */
 form {
     padding-left: 20px;
+    margin-bottom: 10px;
 }
 
 /* Altera elementos com o ID title */
@@ -135,7 +136,7 @@ button[type="reset"]:hover {
     text-shadow: none;
 }
 
-/* O cursor do mouse viram uma "maõzinha quando passa por cima dos elementos selecionados */
+/* O cursor do mouse viram uma "mãozinha quando passa por cima dos elementos selecionados */
 button, select {
     cursor: pointer;
 }
@@ -148,7 +149,9 @@ footer {
     background-color: none;
     text-align: center;
     height: 100px;
-    padding: 6px;
+    /* padding: 10px; */
     margin-top: 20px;
+    width: 100%;
+    position: absolute;
  
 }
